@@ -2,7 +2,7 @@ package controllers
 
 import (
 	"github.com/astaxie/beego"
-	"../models"
+	"shige/models"
 	"fmt"
 )
 

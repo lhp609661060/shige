@@ -13,7 +13,7 @@
       <div class="photo">
         <div class="demo" id="demo" align="center">
           <div class="express">
-            <br style="font-size: 9pt"> 【一剪梅】{{ .ShigeDoc }}
+            <br style="font-size: 9pt"> 【一剪梅】{{ .ShigeDoc.Title }}
             <br style="font-size: 9pt"> 李清照
             <br style="font-size: 9pt">
             <br style="font-size: 9pt"> 红藕香残玉簟秋

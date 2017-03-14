@@ -1,7 +1,7 @@
 package routers
 
 import (
-	"../../shige/controllers"
+	"shige/controllers"
 	"github.com/astaxie/beego"
 )
 

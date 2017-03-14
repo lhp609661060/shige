@@ -1,11 +1,11 @@
 package models
 
 type ShigeDoc struct {
-	title string
+	Title string
 }
 
-func TestData() ShigeDoc {
-	data := ShigeDoc{title:"cestes"}
+func TestData() *ShigeDoc {
+	data := &ShigeDoc{Title:"cestes"}
 	return data
 }
 
