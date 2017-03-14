@@ -1,30 +1,39 @@
 <!DOCTYPE html>
-
 <html>
-<head>
-  <title>Beego</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <link rel="shortcut icon" href="/static/img/shige.png" type="image/x-icon" />
-
-  <link href="/static/css/base.css" type="text/css" rel="stylesheet">
-
-</head>
+    <head>
+        <title>每天一诗</title>
+        <meta charset="utf-8">
+        <link rel="icon" href="/static/img/shige.png">
+        <link rel="stylesheet" type="text/css" href="/static/css/hello.css">
+    </head>
 
 <body>
-  <header>
-    <h1 class="tc mt10">唐诗</h1>
-    <div class="description">
-      Beego is a simple & powerful Go web framework which is inspired by tornado and sinatra.
+  <div class="container">
+    <div>
+      <div class="photo">
+        <div class="demo" id="demo" align="center">
+          <div class="express">
+            <br style="font-size: 9pt"> 【一剪梅】{{ .ShigeDoc }}
+            <br style="font-size: 9pt"> 李清照
+            <br style="font-size: 9pt">
+            <br style="font-size: 9pt"> 红藕香残玉簟秋
+            <br style="font-size: 9pt"> 轻解罗裳
+            <br style="font-size: 9pt"> 独上兰舟
+            <br style="font-size: 9pt"> 云中谁寄锦书来
+            <br style="font-size: 9pt"> 雁字回时
+            <br style="font-size: 9pt"> 月满西楼
+            <br style="font-size: 9pt">
+            <br style="font-size: 9pt"> 花自飘零水自流
+            <br style="font-size: 9pt"> 一种相思
+            <br style="font-size: 9pt"> 两处闲愁
+            <br style="font-size: 9pt"> 此情无计可消除
+            <br style="font-size: 9pt"> 才下眉头
+            <br style="font-size: 9pt"> 却上心头
+          </div>
+        </div>
+      </div>
+
     </div>
-  </header>
-  <footer>
-    <div class="author">
-      Official website:
-      <a href="http://{{.Website}}">{{.Website}}</a> /
-      Contact me:
-      <a class="email" href="mailto:{{.Email}}">{{.Email}}</a>
-    </div>
-  </footer>
-  <div class="backdrop"></div>
-</body>
+  </div>
+  </body>
 </html>
