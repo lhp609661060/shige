@@ -45,15 +45,10 @@
 	opacity: 1;
 }
 
-.express br{
-	list-style: none;
-	font-size: 14px;
-	height: 25px;
-	margin:0px 5px;
-	line-height: 180%;
-	letter-spacing: 2px;
-	border-bottom: 1px dashed #ccc;
+.express{
+	font-size: 16px;
 	cursor: pointer;
+	line-height: 30px;
 }
 .color{
 	color: white;
@@ -62,4 +57,7 @@
 	margin:40px 50px;
 	display: block;
 	word-spacing: 4em;
+}
+.tr {
+	text-align: right;
 }

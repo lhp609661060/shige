@@ -3,7 +3,7 @@ package controllers
 import (
 	"github.com/astaxie/beego"
 	"shige/models"
-	"fmt"
+	_ "fmt"
 )
 
 // IndexController operations for Index
@@ -20,6 +20,5 @@ func (c *IndexController) Get() {
 	c.Data["Website"] = models.TestString()
 	c.Data["Email"] = "astaxie@gmail.com"
 	c.Data["ShigeDoc"] = models.TestData()
-	fmt.Println(models.TestData())
 	c.TplName = "index.tpl"
 }
