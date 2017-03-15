@@ -6,19 +6,11 @@ import (
 	_ "fmt"
 )
 
-// IndexController operations for Index
 type IndexController struct {
 	beego.Controller
 }
-//
-//// URLMapping ...
-//func (c *IndexController) URLMapping() {
-//	c.Mapping("/", c.Get)
-//}
 
 func (c *IndexController) Get() {
-	c.Data["Website"] = models.TestString()
-	c.Data["Email"] = "astaxie@gmail.com"
-	c.Data["ShigeDoc"] = models.TestData()
+	c.Data["ShigeDoc"] = models.ShigeData()
 	c.TplName = "index.tpl"
 }

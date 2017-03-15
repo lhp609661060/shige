@@ -1,16 +1,16 @@
 package main
 
 import (
-	_ "shige/routers"
 	"github.com/astaxie/beego"
 	"shige/filters"
-	"shige/cache"
+	"shige/models"
+	_ "shige/routers"
 )
 
 func main() {
 	beego.AddFuncMap("replace", filters.Replace)
-	cache.InitRedisClient()
-	cache.CacheRedisClientTest()
+	s := models.MgoInit()
+	defer s.Close()
 	beego.Run()
 }
 
