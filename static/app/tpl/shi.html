@@ -1,0 +1,24 @@
+<h1 class="page-header">诗</h1>
+
+<div class="table-responsive">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>名称</th>
+                <th>作者</th>
+                <th>年代</th>
+                <th>标签</th>
+                <th>诗句</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="row in data.rows">
+                <td>{{row.Title}}</td>
+                <td>{{row.Author}}</td>
+                <td>{{row.Period}}</td>
+                <td>{{row.Labels}}</td>
+                <td>{{row.Doc}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

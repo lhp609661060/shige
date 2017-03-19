@@ -21,3 +21,9 @@ func ShigeData() ShigeDoc {
 	return reult
 }
 
+func ShigeDataByQ(q bson.M) []ShigeDoc {
+	c := MgoDb("shige").C("shigedoc")
+	reult := []ShigeDoc{}
+	c.Find(bson.M{}).All(&reult)
+	return reult
+}
